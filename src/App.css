@@ -1,38 +1,51 @@
+/********* FONTS *********/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV,SHRP@100,0.5,0;500,0.5,100;750,0.5,100&display=swap');
+/* font-family: 'Geologica', sans-serif;
+font-variation-settings: 'CRSV' 0.5;
+font-variation-settings:  'SHRP' 100; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: "NathanOutline";
+  src: url("./fonts/NathanOutline-Regular.woff2"), format("woff2");
+  }
+/********* COLOUR VARIABLES *********/
+  :root{
+    --mainBG: #F7FFFF;
+    --secondaryBG: #E2EBF1;
+    --infoCol: #878896;
+    --accentCol: #042AC1;
+    --titleCol: #092271;
+    --borderCol: #000000;
+  }
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: spaced-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.dates{
+  color: var(--infoCol);
+  font-size: 10px;
+  font-weight: 200;
+  font-family: 'League Spartan', sans-serif;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dateDiv{
+  width: 100%;
+  background: var(--secondaryBG);
+  display: flex;
+  justify-content: space-between;
+  border-radius:20px;
+  padding: 1.5px;
+  padding-left: 5px;
+  align-items: center;
+}
+.mapImg{
+  display: none;
+  width: 100px;
+  height: 100px;
 }
